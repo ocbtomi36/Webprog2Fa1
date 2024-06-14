@@ -1,0 +1,15 @@
+id;fullname;dateofbirth;placeofbirth;children;sex;language_exam;role
+2;Lisa Gardner;1957-03-29;Lake Tammy;4;Female;yes;Admin
+7;Kayla Murray;1961-03-28;Ramosborough;0;Male;yes;Manager
+8;Briana Reilly;1941-12-05;East Anita;2;Female;yes;Employee
+9;Briana Reilly;1941-12-05;East Anita;2;Female;yes;Employee
+10;Briana Reilly;1941-12-05;East Anita;2;Female;yes;Employee
+11;Briana Reilly;1941-12-05;East Anita;2;Female;yes;Employee
+12;Lecza;2000-01-01;Budapest;0;1;yes;Admin
+14;Kiss Tamás;1981-01-01;Mátészalka;2;Male;yes;Manager
+15;Eger Tamás;2000-01-01;Eger;1;Male;yes;Admin
+16;Eger Tamás;2000-01-01;Eger;1;Male;yes;Admin
+17;Érték;1981-02-02;Budapest;12;Male;no;Admin
+18;Lecza;1990-01-01;Balaton;12;Male;yes;Admin
+19;Végső Béla;1990-01-01;Budapest;12;Male;yes;Admin
+20;Végső Béla;1990-01-01;Budapest;12;Male;yes;Admin

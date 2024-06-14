@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background:coral;
+    color: brown;
+    line-height: 1.6;
+}
+
+ul{
+    list-style: none;
+    
+}
+/*Overall definitions*/
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+p {
+    margin: 10px 0px;
+}
+
+img{
+    width: 100%;
+}
+nav {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+table{
+    color: black;
+    width: 75rem;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr{
+    height: 3rem;
+}
+th {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+th, td{
+    width: calc(100%/8);
+    text-align: center;
+}
+
+input{
+    border: none;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed; 
+    top: 0px;
+    padding: 0 30px;
+}
+.navbar:hover {
+    background-color: rgb(250, 184, 160);
+    color:black;
+}
+.navbar a {
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: coral 2px solid;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+.navbar ul .child{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+.navbar .logo {
+    font-weight: 400;
+}
+/*Orai munka kiegészítés*/
+.parent {
+    display: block;
+    width: 10rem;
+    text-align: center;
+}
+.submenu {
+    display: none;
+    
+}
+
+.parent:hover > .submenu {
+    display: block;
+    text-align: left;
+    width: 1rem;
+}
+li:hover > .submenu {
+    display:contents;
+}
+.child {
+    flex-direction: column;
+    background-color: rgb(250, 184, 160);
+    
+}
+.child li {
+    margin: 5px ;
+}
+.child li a {
+    color:white;
+}
+
+.child li a:hover{
+    color:brown;
+    border-bottom: 3px solid coral;
+}
+/* Header */
+
+.hero {
+    background-image: url('../img/pexels-cottonbro-studio-3992874.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: rgb(214, 62, 113);
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20%;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero * {
+    z-index: 10;
+}
+
+/*Icons*/
+
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.icons i {
+    background-color: rgb(214, 62, 113);
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+/*Main section from Home */
+#about{
+    background-color: white;
+}
+
+
+
+/*Registration*/
+.article-forms {
+    background-color: rgb(250, 184, 160);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.article-forms > .forms {
+    background-color: white;
+    margin: auto;
+    padding: 2rem;
+    max-width: 700px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forms-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputs {
+    width: 48%;
+    margin-bottom: 1rem;
+}
+
+.inputs label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.inputs input,
+.inputs select {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inputs input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.inputs label:hover {
+    border-bottom: 2px solid coral;
+}
+
+form > h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 80%;
+    margin: 1rem auto;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.submit-btn > input {
+    display: block;
+    width: 80%;
+    margin: 2rem auto 0;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(250, 184, 160);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn > input:hover {
+    background-color: rgb(240, 174, 150);
+}
+
+@media (max-width: 768px) {
+    .inputs {
+        width: 100%;
+    }
+}
+
+/*footer*/
+
+.footer{
+    background-color: rgb(250, 184, 160);
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 12.5rem;
+}
+.footer a {
+    color:brown;
+}
+.footer a:hover{
+    color: coral;
+    cursor: pointer;
+}
+.footer p {
+    color: brown;
+}
+.footer .social > *{
+    margin-right: 1.8rem;
+}
+/*Style for 404.php*/
+.error{
+    
+    background-color: white;
+    
+}
+.error > p {
+    display: block;
+    line-height: 20rem;
+    font-size: 5rem;
+    text-align: center;
+}
+/*Css style for list of users*/
+
+
+.list_all_users{
+    background-color:rgb(250, 184, 160);
+    margin-left: auto;
+    margin-right: auto;
+}
+.list_all_users > h2 {
+    color: black;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+}
+.spacing{
+    height: 2rem;
+    background-color: rgb(250, 184, 160);
+}
+th.one_user{
+    width: calc(100%/9);
+    text-align: center;
+}
+td.one_user{
+    width: calc(100%/9);
+    text-align: center;
+}
+/*Css style for list one user*/
+
+.list_one_user > h2 {
+    color: black;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+}
+/*Css style for show one user*/
+.outer_one_user_detail{
+    background-color: rgb(250, 184, 160);
+    padding-top: 2rem;
+    height: auto;
+    
+}
+.one_user_detail{
+    background-color: white;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+.one_user_detail > h1{
+    text-align: center;
+    line-height: 4rem;
+    font-weight: 400;
+    color: black;
+}
+.one_user_detail > h3, .one_user_detail > p{
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 0px;
+}
+.one_user_detail > p{
+    color: tomato;
+}
+
+/* Css for login */
+
+.login_body{
+
+    background: url('../img/pexels-los-muertos-crew-8867162.jpg');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.login_div{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border: 2px solid black;
+    height: 30rem;
+}
+.login_inside_div{
+    display: flex;
+    margin-top: 10%;
+    width: 80%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login_div h1{
+    color:black;
+    display: block;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 3rem;
+}
+.login_div form{
+    height: 20rem;
+    padding: 0 40px;
+}
+form .input_field{
+    height: 5rem;
+    position: relative;
+}
+.input_field > input {
+    display: block;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit > input {
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 10px;
+    border: none;
+
+} 
+
+.signup_link > a {
+    display: block;
+    color: black;
+    width: 100%;
+    margin-top: 1rem;
+
+}
+.signup_link > a:hover {
+    display: block;
+    color: rgb(94, 30, 108);
+    width: 100%;
+    margin-top: 1rem;
+
+}
+/* Mobile */
+
+@media (max-width: 768px) {
+    nav {
+        height: 11rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 50rem;
+    }
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 683px;
+        flex-direction: column;
+        height: 7.5rem;
+        padding: 1,25rem;
+        min-height: 26%;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 20rem;
+        align-items: center;
+    }
+    .navbar a {
+        padding: 0.6rem 0.6rem;
+        margin: 0 0.1rem;
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    .navbar > nav > ul > li {
+        border-bottom: 1px dotted black;
+    }
+    .flex-items {
+        flex-direction: column;
+    }
+}
